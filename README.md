@@ -4,7 +4,7 @@
 
 ## iisScaner.py 
 
-多线程批量检测网址是否存在IIS短文件名漏洞的poc脚本
+多线程批量检测脚本
 
 ```
 
@@ -28,5 +28,8 @@ IIS短文件名漏洞实际利用脚本
 # Modified by ABC_123
 ```
 
+## 感谢
+
+[红队第7篇：IIS短文件名猜解在拿权限中的巧用，付脚本下载](https://mp.weixin.qq.com/s/N30pLGhwWJcNB90q9QOg1g)
 
 
