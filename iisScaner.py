@@ -1,9 +1,7 @@
 import requests
-import sys
 import threading
 from queue import Queue
 from argparse import ArgumentParser
-from datetime import datetime
 
 def vlun(q,of):
     while q.empty() is not True:
