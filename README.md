@@ -1,6 +1,6 @@
 # iisScaner
 
-多线程批量检测IIS短文件名漏洞+漏洞利用
+多线程批量检测IIS短文件名漏洞+实际利用
 
 ## iisScaner.py 
 
@@ -21,7 +21,7 @@ Example: python3 iisScaner.py -t 100 -f url.txt -o result.txt
 
 ## iisScanIIS10_Exp.py
 
-IIS短文件名漏洞漏洞实际利用脚本
+IIS短文件名漏洞实际利用脚本
 
 ```
 # An IIS short_name scanner   my[at]lijiejie.com  http://www.lijiejie.com    
