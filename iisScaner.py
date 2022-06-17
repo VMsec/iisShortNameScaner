@@ -4,18 +4,15 @@ from queue import Queue
 from argparse import ArgumentParser
 
 def vlun(q,of):
+    f = open(of, 'a')
     while q.empty() is not True:
         url_target = q.get()    
         try:
             status_1 = requests.options(url_target + '/*~1****/a.aspx')  # an existed file/folder
             status_2 = requests.options(url_target + '/l1j1e*~1****/a.aspx')  # not existed file/folder
-            if status_1.status_code == 404 and status_2.status_code == 200:
-                with open(of, 'a') as f:
-                        try:
-                            print(str(url_target)+' is vulerable')
-                            f.write(str(url_target) + '' + '\n')
-                        except:
-                            pass
+            if status_1.status_code == 404 and status_2.status_code == 200: 
+                print(str(url_target)+' is vulerable')
+                f.write(str(url_target) + '' + '\n')
             else:
                 print(str(url_target)+' is no vulerable')
         except Exception:
