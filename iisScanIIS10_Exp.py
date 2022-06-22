@@ -9,7 +9,7 @@ import sys
 import threading
 import time
 import urlparse
-
+import ssl
 
 class Scanner():
     def __init__(self, target):
@@ -28,7 +28,7 @@ class Scanner():
     def _conn(self):
         try:
             if self.scheme == 'https':
-                conn = httplib.HTTPSConnection(self.netloc)
+                conn = httplib.HTTPSConnection(self.netloc,context=ssl._create_unverified_context())
             else:
                 conn = httplib.HTTPConnection(self.netloc)
             return conn
