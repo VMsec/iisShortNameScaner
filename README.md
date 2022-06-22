@@ -21,7 +21,7 @@ Example: python3 iisScaner.py -t 100 -f url.txt -o result.txt
 
 ## iisScanIIS10_Exp.py
 
-IIS短文件名漏洞实际利用脚本
+IIS短文件名漏洞实际利用脚本（添加忽略https证书校验）
 
 ```
 # An IIS short_name scanner   my[at]lijiejie.com  http://www.lijiejie.com    
