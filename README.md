@@ -2,7 +2,7 @@
 
 ![iisShortNameScaner](https://socialify.git.ci/VMsec/iisShortNameScaner/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 
-## iisScaner.py 
+## iisShortNameScaner.py
 
 多线程批量检测脚本（需要自己先识别出`iis`中间件的目标，文件中链接需要带`https://`或`http://`）
 
@@ -15,7 +15,7 @@
 ██║██║██████╔╝██████╔╝╚█████╔╝██║??██║██║?╚███║███████╗██║??██║
 ╚═╝╚═╝╚═════╝?╚═════╝??╚════╝?╚═╝??╚═╝╚═╝??╚══╝╚══════╝╚═╝??╚═╝
     
-Example: python3 iisScaner.py -t 100 -f url.txt -o result.txt
+Example: python3 iisShortNameScaner.py -t 100 -f url.txt -o result.txt
 
 ```
 
